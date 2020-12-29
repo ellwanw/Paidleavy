@@ -1,0 +1,119 @@
+/* Dashboard css */
+.admin-card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px 0px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-content i {
+  font-size: 3.5rem;
+}
+
+.table-shadow {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 21px 0px;
+}
+
+.table-fit{
+  width: fit-content;
+}
+
+/* MyProfile Modal */
+.user-profile__modal .modal-content {
+  border-radius: 10px;
+}
+
+.notavailable{
+  display: none;
+}
+
+/* For Table Responsive with box shadow  */
+@media (min-width: 1026px) {
+  .table-shadow {
+    max-width: 100%;
+    width: fit-content !important;
+  }
+
+  .table-shadow thead th {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .table-shadow tbody td {
+    text-align: center;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .admin-card {
+    width: 100%;
+  }
+
+  .card-content h1 {
+    font-size: 30px;
+  }
+
+  .card-content i {
+    font-size: 2.6rem;
+  }
+
+  h5.card-title {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1370px) {
+  .admin-card {
+    width: 100%;
+  }
+
+  .card-content h1 {
+    font-size: 30px;
+  }
+
+  h5.card-title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media (max-width: 320px) {
+  .available{
+    display: none;
+  }
+
+  .notavailable{
+    display: inline;
+  }
+
+  .notavailable img{
+    width: 100%;
+    min-height: 80vh;
+    object-fit: contain;
+  }
+
+  header.header{
+    display: none !important;
+  }
+
+  .l-navbar{
+    display: none;
+  }
+  .information-jumbotron{
+    display: none;
+  }
+}
